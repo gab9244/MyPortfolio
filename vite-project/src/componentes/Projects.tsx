@@ -4,7 +4,7 @@ export const Projects = () => {
       <section>
         <a href="https://gab9244.github.io/ProjectBattleShip/" target="_blank">
         <img
-          src="MyPortfolio/battleshipScreenShot.png"
+          src="/MyPortfolio/battleshipScreenShot.png"
           alt="A Battleship screenshot"
           
         />
@@ -15,7 +15,7 @@ export const Projects = () => {
       <section >
       <a href="https://gab9244.github.io/MultiStepForm/"  target="_blank">
         <img
-          src="MyPortfolio/MultiSF.png"
+          src="/MyPortfolio/MultiSF.png"
           alt="A MultiStepForm screenshot"
          
         />
@@ -26,7 +26,7 @@ export const Projects = () => {
       <section >
       <a href="https://gab9244.github.io/projectRockPaperScissors/" target="_blank">
         <img
-          src="MyPortfolio/RockPS.png"
+          src="/MyPortfolio/RockPS.png"
           alt="A Rock Paper and Scissors screenshot"
           
         />
