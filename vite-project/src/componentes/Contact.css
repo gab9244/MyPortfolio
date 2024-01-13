@@ -1,0 +1,18 @@
+#Contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    gap: 20px;
+    width: 100vw;
+    background-color: #7A37D1;
+}
+#Contact p {
+    font-size: 30px;
+    color: white;
+}
+.Socials{
+   display: flex;
+    gap: 20px;
+}
