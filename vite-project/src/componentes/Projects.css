@@ -49,11 +49,14 @@ section a:hover {
     section {
         flex-direction: column;
         align-items: center;
+        
        
     }
-    
+    section img {
+        width: 400px;
+    }
     section p {
-        width: 500px;
+        width: 400px;
         margin: 30px;
         text-align: justify;
     }
