@@ -12,7 +12,7 @@
     --background: white;
     --hamburger-margin: 8px;
     --animation-timing: 400ms ease-in-out;
-    --hamburger-height:calc(var(--bar-height) *3 + var(--hamburger-gap) * 2);
+    --hamburger-height: calc(var(--bar-height) *3 + var(--hamburger-gap) * 2);
     --animation-width:
 
 }
@@ -28,8 +28,8 @@
     position: absolute;
     margin: 10px;
     margin-right: 40px;
-   
-    
+
+
 
 }
 
@@ -41,8 +41,8 @@
     height: var(--bar-height);
     background-color: var(--foreground);
     border-radius: 9999px;
-    transform-origin: left center ;
-    transition: opacity var(--animation-timing), width var(--animation-width) , rotate var(--animation-timing) , translate var(--animation-timing), background-color var(--animation-timing) ;
+    transform-origin: left center;
+    transition: opacity var(--animation-timing), width var(--animation-width), rotate var(--animation-timing), translate var(--animation-timing), background-color var(--animation-timing);
 
 }
 
@@ -54,13 +54,13 @@
     pointer-events: none;
 }
 
-.hamburger-menu:has(input:checked)::before {
+.IsChecked::before {
     rotate: 45deg;
     width: var(--x-width);
     translate: 0 calc(var(--bar-height) / -2);
 }
 
-.hamburger-menu:has(input:checked)::after {
+.IsChecked::after {
     rotate: -45deg;
     width: var(--x-width);
     translate: 0 calc(var(--bar-height) / 2);
@@ -68,9 +68,10 @@
 }
 
 
-.hamburger-menu :checked{
+.removed {
     opacity: 0;
     width: 0;
+
 }
 
 
@@ -83,8 +84,12 @@
     height: 100vh;
 }
 
+.sidebar a:hover {
+    background-color: black;
+}
+
 .XBox {
-    translate: 0%; 
+    translate: 0%;
 }
 
 header div {
@@ -95,18 +100,19 @@ header div {
 header {
     display: flex;
     justify-content: end;
-    background-color: white;
+    background-color: #FFFFFF;
     position: fixed;
 
 }
+
 .Checked {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height:100vh;
+    height: 100vh;
     opacity: 30%;
-    background-color: black;    
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,7 +125,7 @@ header {
     padding: 20px;
     perspective: 600px;
 
-    
+
 
 }
 
@@ -137,34 +143,33 @@ a {
 }
 
 a:hover {
-    background-color: black;
-    color: white;
-    transform: rotateX(-5deg) rotateY(20deg);
+    color: #FFFFFF;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
 }
 
 
-@media all and (max-width:900px){
+@media all and (max-width:900px) {
     .Checked {
-       width: 0;
+        width: 0;
     }
+
     header {
-       display: none;
+        display: none;
         justify-content: start;
         margin-left: 50px;
     }
-    
-    #links{
+
+    #links {
         flex-direction: row;
         height: 50px;
         width: 100vw;
     }
-    
 
-  
-   
-  
 
- 
+
+
+
+
+
 }

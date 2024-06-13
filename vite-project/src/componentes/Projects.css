@@ -1,4 +1,3 @@
-
 #Projects {
     display: flex;
     flex-direction: column;
@@ -10,51 +9,53 @@
 
 section {
     display: flex;
-   
+    margin-bottom: 50px;
 
 }
- section:has(a:hover) {
-    perspective: 600px;
-}
-section p{
+
+section p {
     width: 300px;
     margin-left: 50px;
     font-size: 20px;
 }
+
 section img {
     width: 600px;
     transition: 0.5s;
+
 }
 
-section a:hover {
-   
-    transform: rotateX(-5deg) rotateY(20deg);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
+
 
 #More {
     text-align: center;
     width: 200px;
     font-size: 20px;
     margin-top: 50px;
-    border:none;
+    border: none;
+
 }
+
 
 #More:hover {
-    transform: translateY(-5px);
+    background-color: black;
 }
 
 
-@media all and (max-width:1200px){
+
+
+@media all and (max-width:1200px) {
     section {
         flex-direction: column;
         align-items: center;
-        
-       
+
+
     }
+
     section img {
         width: 400px;
     }
+
     section p {
         width: 400px;
         margin: 30px;
