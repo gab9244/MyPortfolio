@@ -12,6 +12,8 @@ body {
     position: absolute;
     width: 100vw;
     height: 100vh;
+    background-color: #0590DF;
+    color: #F8FBF8;
 }
 ::-webkit-scrollbar {
     width: 8px;

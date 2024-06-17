@@ -26,8 +26,8 @@
     z-index: 2;
     cursor: pointer;
     position: absolute;
-    margin: 10px;
-    margin-right: 40px;
+    margin: 10px 30px 10px 10px;
+    
 
 
 
@@ -39,7 +39,7 @@
     content: "";
     width: var(--bar-width);
     height: var(--bar-height);
-    background-color: var(--foreground);
+    background-color: #F8FBF8;
     border-radius: 9999px;
     transform-origin: left center;
     transition: opacity var(--animation-timing), width var(--animation-width), rotate var(--animation-timing), translate var(--animation-timing), background-color var(--animation-timing);
@@ -85,7 +85,8 @@
 }
 
 .sidebar a:hover {
-    background-color: black;
+    background-color: #4EDDE1;
+    color: white;
 }
 
 .XBox {
@@ -100,7 +101,7 @@ header div {
 header {
     display: flex;
     justify-content: end;
-    background-color: #FFFFFF;
+    background-color: #030D25;
     position: fixed;
 
 }
@@ -142,11 +143,7 @@ a {
     text-align: center;
 }
 
-a:hover {
-    color: #FFFFFF;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
-}
 
 
 @media all and (max-width:900px) {

@@ -1,12 +1,11 @@
 #Contact {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 35px;
     gap: 20px;
     width: 100vw;
-    background-color: #7A37D1;
+    background-color: #04A5F4;
 }
 #Contact p {
     font-size: 30px;
@@ -15,4 +14,6 @@
 .Socials{
    display: flex;
     gap: 20px;
+    align-items: center;
+  
 }

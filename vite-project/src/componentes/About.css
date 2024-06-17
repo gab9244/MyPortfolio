@@ -9,22 +9,23 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    background-color: #7A37D1;
+    background-color: #04A5F4;
     color: white;
     gap: 10px;
     width: 100vw;
     height: 400px;
+}
+.Skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
 }
 .Greeting p {
    width: 700px;
    font-size: 20px;
    margin-left: 100px;
 }
-#githubLogo:hover{
- background-color: white;
- border-radius: 10px;
- 
-}
+
 
 
 @media all and (max-width:900px){
