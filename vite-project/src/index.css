@@ -14,7 +14,15 @@ body {
     height: 100vh;
     background-color: #0590DF;
     color: #F8FBF8;
+    font-family: 'Source Code Pro', monospace;
 }
+h1 {
+    font-family: 'Inconsolata', monospace;
+
+}
+p {
+    text-indent: 10px;
+  }
 ::-webkit-scrollbar {
     width: 8px;
     

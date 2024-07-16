@@ -27,7 +27,7 @@
     cursor: pointer;
     position: absolute;
     margin: 10px 30px 10px 10px;
-    
+
 
 
 
@@ -83,10 +83,16 @@
     background-color: var(--background);
     height: 100vh;
 }
+.sidebar a {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+}
 
 .sidebar a:hover {
     background-color: #4EDDE1;
     color: white;
+    transform: scale(0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .XBox {

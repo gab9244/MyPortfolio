@@ -1,5 +1,5 @@
 .aboutMe{
-    height: 400px;
+    height: 450px;
     
 }
 
@@ -13,17 +13,18 @@
     color: white;
     gap: 10px;
     width: 100vw;
-    height: 400px;
+    height: 450px;
 }
 .Skills {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 15px;
 }
-.Greeting p {
+.aboutParagraph {
    width: 700px;
    font-size: 20px;
    margin-left: 100px;
+   text-align: justify;
 }
 
 
@@ -37,8 +38,15 @@
 
     .Greeting p{
         font-size: 1rem;
-        width: 300px;
+        width: 400px;
         margin: 0;
         text-align:justify;
+    }
+    .Greeting {
+        font-size: 14px;
+    }
+
+    .Skills {
+            display: flex;
     }
 }

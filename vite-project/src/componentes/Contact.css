@@ -7,8 +7,9 @@
     width: 100vw;
     background-color: #04A5F4;
 }
+
 #Contact p {
-    font-size: 30px;
+    font-size: 20px;
     color: white;
 }
 .Socials{
@@ -16,4 +17,15 @@
     gap: 20px;
     align-items: center;
   
+}
+
+@media all and (max-width:500px){
+
+    #Contact {
+        display: flex;
+        flex-direction: column;
+    }
+    #Contact p {
+        font-size: 18px
+    }
 }

@@ -19,19 +19,16 @@ export const Projects = () => {
       </section>
 
       <section>
-        <a href="https://gab9244.github.io/MultiStepForm/" target="_blank">
+        <a href="https://task-manager-q6ci.onrender.com/" target="_blank">
           <img
-            src="/MyPortfolio/MultiSF.png"
+            src="/MyPortfolio/taskmanager-printe.png"
             alt="A MultiStepForm screenshot"
           />
         </a>
         <p className="paragraph">
-          I don't have a lot to say about this one; it was just a little hard
-          because it was the first "big" project I did using React, but to not
-          say it didn't bring any challenges, I had a hard time using form
-          validation on React, but I solved it using a library that validated
-          the form easily.
-          <p><span className="negrito">technologies</span>: React JS</p>
+         <p>Here is a task manager project, where you can create your own account, login in it , create your own tasks, complete and delete them.</p>
+         <p>With this project, I learned how to better use routes and MongoDB collections. Specifically, I used three collections: one for tasks, one for users, and one for completed tasks.</p>
+          <p><span className="negrito">technologies</span>: React, JSX, TypeScript, Node, Express, MongoDB, Mongoose</p>
         </p>
       </section>
 
