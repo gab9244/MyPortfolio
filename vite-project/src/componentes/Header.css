@@ -67,14 +67,11 @@
 
 }
 
-
 .removed {
     opacity: 0;
     width: 0;
 
 }
-
-
 
 .sidebar {
     translate: -100%;
@@ -83,6 +80,7 @@
     background-color: var(--background);
     height: 100vh;
 }
+
 .sidebar a {
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 
