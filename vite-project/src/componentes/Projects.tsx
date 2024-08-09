@@ -4,7 +4,7 @@ export const Projects = () => {
       <section>
         <a href="https://theblog-api.onrender.com" target="_blank">
           <img
-            src="/MyPortfolio/myblog-print-2.png"
+            src="myblog-print-2.png"
             alt="A Battleship screenshot"
           />
         </a>
@@ -21,7 +21,7 @@ export const Projects = () => {
       <section>
         <a href="https://task-manager-q6ci.onrender.com/" target="_blank">
           <img
-            src="/MyPortfolio/taskmanager-printe.png"
+            src="taskmanager-printe.png"
             alt="A MultiStepForm screenshot"
           />
         </a>
@@ -35,7 +35,7 @@ export const Projects = () => {
       <section>
         <a href="https://gab9244.github.io/MemoryGame/" target="_blank">
           <img
-            src="/MyPortfolio/memoryGame.png"
+            src="memoryGame.png"
             alt="A Memory game screenshot"
           />
         </a>

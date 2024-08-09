@@ -13,12 +13,12 @@ export const About = () => {
           </p>
 
           <div className="Skills">
-            <img src="/MyPortfolio/js.png" alt=" JavaScript icon"  />
-            <img src="/MyPortfolio/react.png" alt="React icon"  />
-            <img src="/MyPortfolio/NodeLogo.png" alt="node icon"  />
-            <img src="/MyPortfolio/GitLogo.png" alt="git icon"  />
-            <img src="/MyPortfolio/css-3.png" alt="CSS icon"  />
-            <img src="/MyPortfolio/html.png" alt="HTML icon"  />
+            <img src="js.png" alt=" JavaScript icon"  />
+            <img src="react.png" alt="React icon"  />
+            <img src="NodeLogo.png" alt="node icon"  />
+            <img src="GitLogo.png" alt="git icon"  />
+            <img src="css-3.png" alt="CSS icon"  />
+            <img src="html.png" alt="HTML icon"  />
 
 
             
