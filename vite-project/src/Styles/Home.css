@@ -1,0 +1,41 @@
+.Home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.HomeLayout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  width: 80vw;
+
+}
+
+.HomeLayout h1 {
+  font-family: Roboto,sans-serif;
+  font-size: 3rem;
+}
+
+
+#MinhaFoto {
+  width: 400px;
+  height: 400px;
+  border-radius: 10%;
+}
+
+.Socials img {
+  width: 50px;
+}
+@media all and (max-width: 1200px) {
+  .HomeLayout {
+    font-size: 1rem;
+    width: 80vw;
+
+  }
+  
+}
+

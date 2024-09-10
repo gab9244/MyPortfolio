@@ -1,0 +1,16 @@
+.sobreMim{
+display: flex;
+text-align: center;
+flex-direction: column;
+align-items: center;
+gap: 30px;
+}
+.sobreMim p{
+    width: 80vw;
+    font-size: 1.3rem;
+    color: #737783;
+}
+.SobreSocials {
+    background-color: #0590DF; 
+    width: 100%;
+}

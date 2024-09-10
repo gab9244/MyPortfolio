@@ -12,9 +12,11 @@ body {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-color: #0590DF;
-    color: #F8FBF8;
-    font-family: 'Source Code Pro', monospace;
+    /* background-color: #0590DF; */
+    /* color: #F8FBF8; */
+    /* font-family: 'Source Code Pro', monospace; */
+    font-family: Roboto,sans-serif;
+
 }
 h1 {
     font-family: 'Inconsolata', monospace;
@@ -22,6 +24,11 @@ h1 {
 }
 p {
     text-indent: 10px;
+  }
+
+  a { 
+    text-decoration: none;
+    color: black;
   }
 ::-webkit-scrollbar {
     width: 8px;
@@ -38,8 +45,3 @@ p {
     height: 100px;
 }
 
-@media all and (max-width:500px){
-    .HomeLayout h1{
-        font-size: 20px;
-    }
-}

@@ -1,0 +1,155 @@
+header {
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  margin: 40px;
+  align-items: center;
+}
+header img {
+  cursor: pointer;
+}
+
+#Logo {
+  width: 100px;
+}
+#links {
+  display: none;
+}
+
+#MenuButton {
+  font-size: 1.2rem;
+  width: 80px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: aliceblue;
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transform-origin: center;
+  cursor: pointer;
+}
+
+#MenuButton:hover {
+  background-color: rgb(195, 199, 202);
+  transform: scale(1.05);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+#MenuButton:active {
+  scale: 0.9;
+}
+.MenuBtns {
+  position: relative;
+  display: flex;
+  gap: 15px;
+}
+
+.Menu {
+  position: absolute;
+  top: 4rem;
+  width: 125px;
+  border-radius: 10px;
+  background-color: white;
+ }
+ .Menu a {
+  display: flex;
+  width: 100%;
+  text-align: center;
+ }
+ 
+.Menu:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-365deg, #b84fce 30%, #d4acfb 132% );
+  transform: translate3d(-2px, 0px, 0) scale(1.04);
+  filter: blur(11px);
+  opacity: 0.39;
+  transition: opacity 0.3s;
+  border-radius: inherit;
+}
+
+/* 
+* Prevents issues when the parent creates a 
+* stacking context. (For example, using the transform
+* property )
+*/
+.Menu::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  border-radius: inherit;
+}
+      
+.Menu ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.Menu li {
+  padding: 10px;
+  cursor: pointer;
+}
+.Menu li:hover {
+  background-color: #e9e5e5;
+  
+}
+.lenguageBtn {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transform-origin: center;
+  cursor: pointer;
+  scale: 0.9;
+}
+
+.lenguageBtn:hover {
+  scale: 1.3;
+}
+.lenguageBtn:active {
+  scale: 0.8;
+}
+/* Aqui definimos a animação @keyframes define a animação e slide é o nome dela  */
+@keyframes slide {
+  /* Dentro do @keyframes definimos de onde a animação vai começar e onde ela vai terminar from é o começo e to e o fim */
+ from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+
+  }
+}
+.slider {
+  padding: 10px;
+  border-radius: 15px;
+  width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+
+
+}
+.texto {
+  display: inline-block;
+  animation: 5s slide infinite linear;
+  font-size: 20px;
+}
+.slider p {
+  padding-left: 150px;
+
+}
+
+@media all and (max-width:900px){
+  header {
+    width: 100%;
+  }
+
+  .slider {
+    display: none;
+  }
+}
