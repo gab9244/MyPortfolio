@@ -61,7 +61,7 @@ export const Header = () => {
 
           <button id="MenuButton" onClick={ShowMenu}>
             {!Language
-              ? MenuOn
+              ? !MenuOn
                 ? "Menu"
                 : "Fechar"
               : !MenuOn
