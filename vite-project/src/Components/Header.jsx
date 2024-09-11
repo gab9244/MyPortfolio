@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { UserContext } from "./UserContext";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 export const Header = () => {
   const [MenuOn, setMenuOn] = useState(false);
   const { Language, setLanguage } = useContext(UserContext);
@@ -15,9 +15,9 @@ export const Header = () => {
   return (
     <>
       <header className="Header">
-        <Link to="/">
+        {/* <Link to="/">
           <img src="MeuLogo.png" alt="" id="Logo" />
-        </Link>
+        </Link> */}
         {/* É necessário ter o mesmo texto duas vezes para poder criar o efeito */}
         <div className="slider">
           {Language ? (
@@ -72,21 +72,21 @@ export const Header = () => {
             <div className="Menu">
               {Language ? (
                 <ul>
-                  <li>
+                  {/* <li>
                     <Link to ={"/Sobre"}>About</Link>
                   </li>
                   <li>
                     <Link to={"/MoreProjects"}>Projects</Link>
-                  </li>
+                  </li> */}
                   <li><a href="https://www.linkedin.com/in/gabriel-francisco-s/" target="_blank">Linkedin</a></li>
                   <li><a href="https://github.com/gab9244" target="_blank">Github</a></li>
                 </ul>
               ) : (
                 <ul>
-                  <li><Link to ={"/Sobre"}>Sobre</Link></li>
+                  {/* <li><Link to ={"/Sobre"}>Sobre</Link></li>
                   <li>
                     <Link to={"/MoreProjects"}>Projetos</Link>
-                  </li>
+                  </li> */}
                   <li><a href="https://www.linkedin.com/in/gabriel-francisco-s/" target="_blank">Linkedin</a></li>
                   <li><a href="https://github.com/gab9244" target="_blank">Github</a></li>
                 </ul>
