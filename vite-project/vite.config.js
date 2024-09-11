@@ -6,7 +6,12 @@ export default defineConfig({
   base: '/',
   build: {
     rollupOptions: {
-      external: ['react-router-dom']
+      external: ['react-router-dom'],
+    },
+  },
+  resolve: {
+    alias: {
+      'react-router-dom': require.resolve('react-router-dom')
     }
   }
 })
