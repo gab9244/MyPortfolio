@@ -4,9 +4,9 @@ export const MoreProjects = () => {
   return (
     <div id="Projects">
       <Typography variant="h4" component={"h3"} sx={{ marginBottom: 12 }}>
-        Meus projetos
+        Mais projetos
       </Typography>
-      <div className="sessões">
+      <div className="Moreprojects">
         <section>
           <img src="myblog-print-2.png" alt="My blog screenshot" />
           <div className={"uperPart"}>
@@ -78,6 +78,31 @@ export const MoreProjects = () => {
               quantas sessões ele quiser sobre qualquer campo como suas
               experiências, onde estudou e o que e também as linguas que sabe
               falar.
+            </Typography>
+          </div>
+        </section>
+        <section>
+          <img src="screenshot-challenger01.png" alt="A Memory game screenshot" />
+
+          <div className={"uperPart"}>
+            <button className="visitWebBtn">
+              <a
+                href="https://manage-landing-page-master-challenge-2w5a3hunc.vercel.app/"
+                target="_blank"
+              >
+                Website
+              </a>
+            </button>
+          </div>
+          <div className="lowerPart">
+            <Typography
+              variant="h7"
+              component={"p"}
+              className="paragraph"
+              marginLeft={10}
+            >
+              Este é um desafio que eu fiz do Frontend Mentor, sendo um e commerce simples, não possuindo muito JavaScript, já que o foco é como usar o CSS para posicionar formatos de maneira responsiva.
+              O unico desafio desse projeto foi fazer o carrossel, no meu caso a dificuldade apareceu pelo fato de eu mesmo tornar o funcionamento do carrossel em algo complexo, sendo que apenas usando transitionX já criou o resultado esperado.
             </Typography>
           </div>
         </section>

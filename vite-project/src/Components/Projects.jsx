@@ -57,10 +57,7 @@ export const Projects = () => {
           </div>
           <div className="lowerPart">
             {Language ? (
-              <p
-                className="paragraph"
-                
-              >
+              <p className="paragraph">
                 My goal with this project is to provide a organization where the
                 user can create their blocks of tasks, mark them as complete and
                 delete them. <br />
@@ -70,9 +67,7 @@ export const Projects = () => {
                 TypeScript, Node, Express, MongoDB, Mongoose
               </p>
             ) : (
-              <p
-                className="paragraph"
-              >
+              <p className="paragraph">
                 Meu objetivo com este projeto é proporcionar uma experiência de
                 organização onde o usuário pode criar seus blocos de
                 tarefas,marcá-los como completos e deletá-los. <br />
@@ -85,12 +80,15 @@ export const Projects = () => {
           </div>
         </section>
         <section>
-          <img src="screenshot-cv-projeto.png" alt="A Memory game screenshot" />
+          <img
+            src="screenshot-challenger01.png"
+            alt="A Memory game screenshot"
+          />
 
           <div className={"uperPart"}>
             <button className="visitWebBtn">
               <a
-                href="https://cv-application-sandy-ten.vercel.app/"
+                href="https://manage-landing-page-master-challenge-2w5a3hunc.vercel.app/"
                 target="_blank"
               >
                 Website
@@ -98,24 +96,18 @@ export const Projects = () => {
             </button>
           </div>
           <div className="lowerPart">
-            {Language ? (
-              <p
-                className="paragraph"
-              >
-                This is a resume creator, in it the user can put as many
-                sessions as he wants on any field as his experiences, where you
-                studied and what and also the languages  ​​you know to speak
-              </p>
-            ) : (
-              <p
-                className="paragraph"
-              >
-                Este é um criador de currículo, nele o usuário pode colocar
-                quantas sessões ele quiser sobre qualquer campo como suas
-                experiências, onde estudou e o que e também as linguas que sabe
-                falar.
-              </p>
-            )}
+            <Typography
+              variant="h7"
+              component={"p"}
+              className="paragraph"
+              marginLeft={10}
+            >
+              {Language
+                ? `This is a challenge that I did from Frontend Mentor, being a simple e-commerce, not having much JavaScript, since the focus is on how to use CSS to position formats in a responsive way.
+                        The only challenge of this project was making the carousel, in my case the difficulty appeared due to the fact that I myself made the carousel's operation into something complex, and just using transitionX already created the expected result.`
+                : ` Este é um desafio que eu fiz do Frontend Mentor, sendo um e commerce simples, não possuindo muito JavaScript, já que o foco é como usar o CSS para posicionar formatos de maneira responsiva.
+              O unico desafio desse projeto foi fazer o carrossel, no meu caso a dificuldade apareceu pelo fato de eu mesmo tornar o funcionamento do carrossel em algo complexo, sendo que apenas usando transitionX já criou o resultado esperado.`}
+            </Typography>
           </div>
         </section>
       </div>
@@ -123,7 +115,7 @@ export const Projects = () => {
         <div>
           <p>
             {Language
-              ?`
+              ? `
               If you want to see more projects and technologies that I usually use, just
               click the button
               .`
