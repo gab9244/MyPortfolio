@@ -47,7 +47,7 @@ export const Projects = () => {
           </div>
         </section>
         <section>
-          <img src="taskmanager-printe.png" alt="A MultiStepForm screenshot" />
+          <img src="taskmanager-printe.png" alt="A screenshot of my taskmanager project" />
           <div className={"uperPart"}>
             <button className="visitWebBtn">
               <a href="https://task-manager-q6ci.onrender.com/" target="_blank">
@@ -82,7 +82,7 @@ export const Projects = () => {
         <section>
           <img
             src="screenshot-challenger01.png"
-            alt="A Memory game screenshot"
+            alt="screenshot of a E commerce site"
           />
 
           <div className={"uperPart"}>

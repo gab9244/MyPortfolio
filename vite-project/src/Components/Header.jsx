@@ -16,7 +16,7 @@ export const Header = () => {
     <>
       <header className="Header">
         <Link to="/">
-          <img src="MeuLogo.png" alt="" id="Logo" />
+          <img src="MeuLogo.png" alt="Meu logo" id="Logo" />
         </Link>
         {/* É necessário ter o mesmo texto duas vezes para poder criar o efeito */}
         <div className="slider">
@@ -44,7 +44,7 @@ export const Header = () => {
           {Language ? (
             <img
               src="https://victortrani.dev/img/united-states-of-america.22de86d3.svg"
-              alt="usa flag"
+              alt="USA flag"
               width={"40px"}
               onClick={ChooseL}
               className="lenguageBtn"

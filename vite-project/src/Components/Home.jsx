@@ -18,7 +18,7 @@ export const Home = () => {
           </h1>
         )}
 
-        <img src="Editando a minha foto (1).png" alt="My logo" id="MinhaFoto" />
+        <img src="Editando a minha foto (1).png" alt="A photo of myself" id="MinhaFoto" />
       </div>
     </div>
   );
