@@ -8,6 +8,8 @@ import "./Styles/About.css";
 import "./Styles/Projects.css";
 import "./Styles/Contact.css";
 import "./Styles/Sobre.css";
+import "./Styles/Animations.css";
+
 
 import { Pages } from "./Components/Pages";
 createRoot(document.getElementById("root")).render(

@@ -1,13 +1,39 @@
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect,useRef } from "react";
 import { UserContext } from "./UserContext";
 
 import ContainedButtons from "./Buttons";
 import { Grid, Typography, Box } from "@mui/material";
 export const Projects = () => {
   const { Language } = useContext(UserContext);
+  const hiddenElement = useRef(null)
+
+     useEffect(() => {
+    // Configuração do IntersectionObserver
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        } else {
+          entry.target.classList.remove("show");
+        }
+      });
+    });
+
+    // Observa o elemento atual referenciado pelo hiddenElement
+    if (hiddenElement.current) {
+      observer.observe(hiddenElement.current);
+    }
+
+    // Limpar a observação quando o componente é desmontado
+    return () => {
+      if (hiddenElement.current) {
+        observer.unobserve(hiddenElement.current);
+      }
+    };
+  }, []);
 
   return (
-    <div id="Projects">
+    <div id="Projects" ref={hiddenElement} className="hidden">
       <h2 className="ProjectsH2">
         {Language ? "My Projects" : "Meus projetos"}
       </h2>
@@ -124,7 +150,7 @@ export const Projects = () => {
           </p>
         </div>
         <div>
-          <ContainedButtons />
+          <ContainedButtons link = {"/MoreProjects"}/>
         </div>
       </div>
     </div>

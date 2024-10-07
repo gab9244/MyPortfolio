@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
 }
 
 .HomeLayout {
@@ -19,7 +20,12 @@
   font-family: Roboto,sans-serif;
   font-size: 3rem;
 }
+.HomeLayout p {
+  font-size: 2rem;
+  color: #737783;
 
+
+}
 
 #MinhaFoto {
   width: 400px;

@@ -52,6 +52,8 @@ section {
   overflow: hidden;
   margin: 20px;
   width: 30vw;
+  border-radius: 10px;
+
 }
 section:hover .uperPart {
   animation: 1s ParaBaixo;

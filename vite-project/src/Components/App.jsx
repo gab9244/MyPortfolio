@@ -10,8 +10,8 @@ export const App = () => {
     <UserProvider>
       <Header />
       <Home />
-      <About />
       <Projects />
+      <About />
       <Contact />
     </UserProvider>
   )
