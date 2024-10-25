@@ -6,7 +6,7 @@ export default function ContainedButtons({link}) {
   const { Language } = useContext(UserContext);
 
   return (
-      <Button variant="contained" href={link} target='_blank' id='More'>
+      <Button variant="contained" href={link}  id='More'>
       {Language ?(
         "More"
       ):(

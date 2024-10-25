@@ -19,6 +19,7 @@ export const Contact = () => {
         <a
           href="https://www.linkedin.com/in/gabriel-francisco-s/"
           target="_blank"
+          
         >
           <LinkedInIcon
             className="icones"
