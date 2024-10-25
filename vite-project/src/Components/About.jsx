@@ -1,9 +1,7 @@
 import { UserContext } from "./UserContext";
 import ContainedButtons from "./Buttons";
 import BasicModal from "./Modal";
-import { useContext, useEffect, useRef, } from "react";
-import { Link } from "react-router-dom";
-
+import { useContext, useEffect, useRef } from "react";
 export const About = () => {
   // Aqui implementamos a funcionalidade de animação ao scroll down. Para fazer esse efeito adicionamos a classe hidden ao elemento e quando esse elemento entra no view point to usuário a classe show é adicionada, assim como se ele sair a classe é removida
   const { Language } = useContext(UserContext);
@@ -61,12 +59,12 @@ export const About = () => {
         <div>
           <p>
             {Language
-              ? `If you want to know more about my journey click the button bellow.`
+              ? `If you want to know more about my journey click the button below.`
               : `Se quiser saber um pouco mais sobre minha jornada aperte o botão abaixo.`}
           </p>
         </div>
         <div>
-         <Link to = {"/Sobre"}>Mais</Link>
+          <ContainedButtons link={'/Sobre'}/>
         </div>
       </div>
     </div>

@@ -1,17 +1,16 @@
-import Button from '@mui/material/Button';
-import Stack from '@mui/material/Stack';
+import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { UserContext } from "./UserContext";
 export default function ContainedButtons({link}) {
   const { Language } = useContext(UserContext);
 
   return (
-      <Button variant="contained" href={link}  id='More'>
+      <Link to = {link} className="MoreBtns">
       {Language ?(
         "More"
       ):(
       "Mais"
       )}
-      </Button>
+      </Link>
   );
 }

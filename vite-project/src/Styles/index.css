@@ -45,3 +45,24 @@ p {
     height: 100px;
 }
 
+
+
+.MoreBtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    font-size: 23px;
+    background-color: #1565C0;
+    color: #ffffff;
+}
+
+.MoreBtns:hover {
+    background-color: #2d7fdd;
+    transform: scale(1.05);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  .MoreBtns:active {
+    scale: 0.9;
+  }
