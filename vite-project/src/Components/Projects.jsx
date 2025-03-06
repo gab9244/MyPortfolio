@@ -38,7 +38,7 @@ export const Projects = () => {
         {Language ? "My Projects" : "Meus projetos"}
       </h2>
       <div className="sessões">
-        <section>
+       {/* <section>
           <img src="myblog-print-2.png" alt="My blog screenshot" />
           <div className={"uperPart"}>
             <button className="visitWebBtn">
@@ -49,7 +49,41 @@ export const Projects = () => {
           </div>
           <div className={"lowerPart"}>
             {Language ? (
+              <p> 
+                The site offers a simple blogging experience, in which you can
+                create your account, log in and create your own page, as well as
+                edit it and delete it. My goals with this project was to create
+                my first mern website(mongoose, express, React, Node) and
+                without a doubt it was the most difficult. <br />
+                <span className="negrito">technologies</span>: React JS,
+                TypeScript, Node, Express, JavaScript, HTML e CSS,mongoDB
+              </p>
+            ) : (
               <p>
+                O site oferece uma simples experiência de criação de blogs, nele
+                você pode criar a sua conta, entrar nela e criar a sua própria
+                página, assim como editar-lá e tambémdeleta-lá. Meus objetivo
+                com esse projeto foi criar o meu primeiro site mern(mongoose,
+                express, React, Node) e sem sombra de duvidas foi o mais
+                dificil. <br />
+                <span className="negrito">tecnologias</span>: React JS,
+                TypeScript, Node, Express, JavaScript, HTML e CSS,mongoDB
+              </p>
+            )}
+          </div>
+        </section> */}
+        <section>
+          <img src="ForeverEcommecerScreenShot.png" alt="Ecommecer screenshot" />
+          <div className={"uperPart"}>
+            <button className="visitWebBtn">
+              <a href="https://forevere-commerce2.onrender.com/" target="_blank">
+                Website
+              </a>
+            </button>
+          </div>
+          <div className={"lowerPart"}>
+            {Language ? (
+              <p> 
                 The site offers a simple blogging experience, in which you can
                 create your account, log in and create your own page, as well as
                 edit it and delete it. My goals with this project was to create

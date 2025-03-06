@@ -106,6 +106,30 @@ export const MoreProjects = () => {
             </Typography>
           </div>
         </section>
+        <section>
+          <img src="ForeverEcommecerScreenShot.png" alt="A ecommecer ScreenShot" />
+
+          <div className={"uperPart"}>
+            <button className="visitWebBtn">
+              <a
+                href="https://forevere-commerce2.onrender.com/"
+                target="_blank"
+              >
+                Website
+              </a>
+            </button>
+          </div>
+          <div className="lowerPart">
+            <Typography
+              variant="h7"
+              component={"p"}
+              className="paragraph"
+              marginLeft={10}
+            >
+              Meu primeiro Ecommecer
+            </Typography>
+          </div>
+        </section>
       </div>
     </div>
   );
