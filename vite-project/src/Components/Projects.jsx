@@ -84,24 +84,16 @@ export const Projects = () => {
           <div className={"lowerPart"}>
             {Language ? (
               <p> 
-                The site offers a simple blogging experience, in which you can
-                create your account, log in and create your own page, as well as
-                edit it and delete it. My goals with this project was to create
-                my first mern website(mongoose, express, React, Node) and
-                without a doubt it was the most difficult. <br />
-                <span className="negrito">technologies</span>: React JS,
-                TypeScript, Node, Express, JavaScript, HTML e CSS,mongoDB
+                The site offers a complete experience of a virtual store where is possible to create a account, login in it, save items into user's cart, add cloths of differents sizes, changes the quantity of a certain cloth and delete them.
+                This was my first ecommerce being a mern website(mongoose, express, React, Node) and was a challenge that helped me to improve in my skills of problem resolving and how to use arrays to make complexe and dynamic lists.<br />
+                <span className="negrito">technologies</span>: React JS/TypeScript/JavaScript, Node/Express, HTML/CSS,mongoDB and Tailwind. 
               </p>
             ) : (
               <p>
-                O site oferece uma simples experiência de criação de blogs, nele
-                você pode criar a sua conta, entrar nela e criar a sua própria
-                página, assim como editar-lá e tambémdeleta-lá. Meus objetivo
-                com esse projeto foi criar o meu primeiro site mern(mongoose,
-                express, React, Node) e sem sombra de duvidas foi o mais
-                dificil. <br />
-                <span className="negrito">tecnologias</span>: React JS,
-                TypeScript, Node, Express, JavaScript, HTML e CSS,mongoDB
+                O site oferece uma experiência completa de uma loja virtual onde é possível criar uma conta, fazer login, salvar itens no carrinho do usuário, adicionar roupas de diferentes tamanhos, mudar a quantidade de uma certa roupa e deleta-las. Esse projeto foi meu primeiro ecommerce sendo um projeto mern(mongoose,
+                express, React, Node) e foi um desafio que me ajudou a melhorar minhas habilidades em resolver problemas e como usar arrays para fazer listas complexas e dinâmicas. <br />
+                <span className="negrito">tecnologias</span>: React JS/
+                TypeScript/JavaScript, Node/Express,  HTML/CSS,mongoDB e Tailwind.
               </p>
             )}
           </div>

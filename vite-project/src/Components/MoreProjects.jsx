@@ -126,7 +126,8 @@ export const MoreProjects = () => {
               className="paragraph"
               marginLeft={10}
             >
-              Meu primeiro Ecommecer
+              Este é meu primeiro ecommerce completo, nele é possível fazer tudo que seria possível em um ecommerce real, da para salvar no carrinho do usuário, mudar a quantidade de uma certa roupa, ver o valor total e também é possível deletar roupas selecionadas.
+              Com esse projeto tive grande dificuldade em fazer com que o carrinho fosse dinâmico e outras funcionalidade que lidavam com roupas com o mesmo contudo, mas tamanhos diferentes, por causa dessas dificuldades melhorei minha maneira de resolver problemas e como usar arrays.
             </Typography>
           </div>
         </section>
