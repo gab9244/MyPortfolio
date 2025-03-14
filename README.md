@@ -42,3 +42,4 @@ section:not(:hover) .uperPart {
 }
 
 
+OBS: Por algum motivo os botões do MUI não estão funcionando no Vercel, vou remove-los
