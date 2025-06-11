@@ -9,6 +9,7 @@ import "./Styles/Projects.css";
 import "./Styles/Contact.css";
 import "./Styles/Sobre.css";
 import "./Styles/Animations.css";
+import "./Styles/Animations.css";
 
 
 import { Pages } from "./Components/Pages";

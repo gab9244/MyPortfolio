@@ -56,6 +56,9 @@ p {
     font-size: 23px;
     background-color: #1565C0;
     color: #ffffff;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transform-origin: center;
+  border-radius: 10px;
 }
 
 .MoreBtns:hover {

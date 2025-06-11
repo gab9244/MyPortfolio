@@ -11,6 +11,24 @@ header img {
 
 #Logo {
   width: 100px;
+  animation: IncreasingSize;
+  animation-play-state: paused;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+#Logo:hover {
+  animation-play-state: running;
+}
+@keyframes IncreasingSize {
+  50% {
+    scale: 1.5;
+  }
+
+  100% {
+    scale: 1.5;
+  }
 }
 #links {
   display: none;
@@ -48,13 +66,13 @@ header img {
   width: 125px;
   border-radius: 10px;
   background-color: white;
- }
- .Menu a {
+}
+.Menu a {
   display: flex;
   width: 100%;
   text-align: center;
- }
- 
+}
+
 .Menu:before {
   content: "";
   z-index: -1;
@@ -63,7 +81,7 @@ header img {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(-365deg, #b84fce 30%, #d4acfb 132% );
+  background: linear-gradient(-365deg, #b84fce 30%, #d4acfb 132%);
   transform: translate3d(-2px, 0px, 0) scale(1.04);
   filter: blur(11px);
   opacity: 0.39;
@@ -87,7 +105,7 @@ header img {
   background: inherit;
   border-radius: inherit;
 }
-      
+
 .Menu ul {
   display: flex;
   flex-direction: column;
@@ -99,7 +117,6 @@ header img {
 }
 .Menu li:hover {
   background-color: #e9e5e5;
-  
 }
 .lenguageBtn {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -117,12 +134,11 @@ header img {
 /* Aqui definimos a animação @keyframes define a animação e slide é o nome dela  */
 @keyframes slide {
   /* Dentro do @keyframes definimos de onde a animação vai começar e onde ela vai terminar from é o começo e to e o fim */
- from {
+  from {
     transform: translateX(0);
   }
   to {
     transform: translateX(-100%);
-
   }
 }
 .slider {
@@ -131,8 +147,6 @@ header img {
   width: 300px;
   overflow: hidden;
   white-space: nowrap;
-
-
 }
 .texto {
   display: inline-block;
@@ -141,10 +155,9 @@ header img {
 }
 .slider p {
   padding-left: 150px;
-
 }
 
-@media all and (max-width:900px){
+@media all and (max-width: 900px) {
   header {
     width: 100%;
   }

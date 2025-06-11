@@ -12,5 +12,6 @@ gap: 30px;
 }
 .SobreSocials {
     background-color: #0590DF; 
-    width: 100%;
+    width: 25%;
+    border-radius: 10px;
 }

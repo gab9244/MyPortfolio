@@ -29,11 +29,17 @@ export const Home = () => {
           </div>
         )}
 
-        <img
-          src="Editando a minha foto (1).png"
-          alt="A photo of myself"
-          id="MinhaFoto"
-        />
+        <div className="MfotoDIV">
+          <img
+            src="Editando a minha foto (1).png"
+            alt="A photo of myself"
+            id="MinhaFoto"
+          />
+             <div class="Animations"></div>
+    <div class="Animations2"></div>
+    <div class="Animations3"></div>
+
+        </div>
       </div>
     </div>
   );

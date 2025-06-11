@@ -1,19 +1,171 @@
-
-.hidden {
-    opacity: 0;
-    filter: blur(10px);
-    transform: translateY(5vw);
-    transition: all 1s ease-in-out;
-}
-.show {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateY(0);
-
-
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
 }
 
-.AnimatedElements {
-   min-height: 100vh;
+.Animations {
+  /* Com esta linha torna-se possível colocar elementos sobre este */
+  position: relative;
+  background-color: aqua;
+  width: 100vw;
+  height: 225px;
+  display: flex;
+}
 
+.Animations::before {
+  content: "";
+  display: block;
+  /* Com esta linha se torna possível colocar este elemento sobre outro elemento ancestral, e o posicionamos usando left,top, right e bottom */
+  position: absolute;
+  /* Criamos um formado meio oval */
+  border-radius: 100% 0%;
+  /* Aqui rodamos o elemento  no eixo z e damos como posição inicial 300% colocando o elemento na estrema direita fora da tela */
+  transform: rotateZ(26deg) translateX(300%);
+  width: 50vw;
+  height: 50vh;
+  background-color: aqua;
+  /* Aplica a animação a esse elemento */
+  animation-name: Waves;
+  /* Define o tempo da animação */
+  animation-duration: 5s;
+  /* Define quantas vezes a animação deve ser executada, nesse caso usamos infinite que cria um looping infinito */
+  animation-iteration-count: infinite;
+  /* Define se a animação deve acontecer mais rápido em determinadas partes, como ficar mais rápido em 50% da animação ou nesse caso que damos o valor ease-in-out que faz que a animação corra igualmente em todas as partes */
+  animation-timing-function: ease-in-out;
+  left: 15%;
+  bottom: -26%;
+
+  /* Determina quanto tempo a animação vai demorar para acontecer */
+  animation-delay: 0s;
+}
+/* Cada onda é criada usando os pseudo elementos ::after e ::before, onde usando estilo neles os tornado em ondas e depois para dar efeito de movimento aplicamos a animação Waves neles, também quero mencionar que para dar distancia entre cada onda usei animation-delay fazendo com que a outra onda só comece a se mover quando a outra já estiver quase terminado seu movimento. Aumentei o valor de animation-delay em 0.5s para cada outra onda colocada atrás da primeira para criar um efeito de movimento orgânico */
+.Animations::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 0%;
+  transform: rotateZ(26deg) translateX(300%);
+  width: 50vw;
+  height: 50vh;
+  background-color: aqua;
+
+  animation-name: Waves;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  left: 15%;
+  bottom: -26%;
+
+  animation-delay: 2.5s;
+}
+
+.Animations2 {
+  position: absolute;
+  background-color: rgb(50, 214, 214);
+  width: 100vw;
+  height: 225px;
+  display: flex;
+  justify-items: space-between;
+  bottom: 15%;
+  z-index: -1;
+}
+.Animations2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 0%;
+  transform: rotateZ(26deg) translateX(300%);
+  width: 50vw;
+  height: 50vh;
+  background-color: rgb(50, 214, 214);
+
+  animation-name: Waves;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  left: 15%;
+  bottom: -26%;
+
+  animation-delay: 0.5s;
+}
+
+.Animations2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 0%;
+  transform: rotateZ(26deg) translateX(300%);
+  width: 50vw;
+  height: 50vh;
+  background-color: rgb(50, 214, 214);
+
+  animation-name: Waves;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  left: 15%;
+  bottom: -26%;
+  animation-delay: 3s;
+}
+
+.Animations3 {
+  position: absolute;
+  background-color: rgb(2, 187, 187);
+  width: 100vw;
+  height: 225px;
+  display: flex;
+  justify-items: space-between;
+  z-index: -2;
+  bottom: 25%;
+}
+
+.Animations3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 0%;
+  transform: rotateZ(26deg) translateX(300%);
+  width: 50vw;
+  height: 50vh;
+  background-color: rgb(2, 187, 187);
+
+  animation-name: Waves;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  left: 15%;
+  bottom: -26%;
+  animation-delay: 1s;
+}
+
+.Animations3::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 0%;
+  transform: rotateZ(26deg) translateX(300%);
+  width: 50vw;
+  height: 50vh;
+  background-color: rgb(2, 187, 187);
+
+  animation-name: Waves;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  left: 15%;
+  bottom: -26%;
+
+  animation-delay: 3.5s;
+}
+
+/* A animação Waves server para mover as ondas para frente as tirando da estrema direita fora da tela para a estrema esquenta também fora da tela */
+@keyframes Waves {
+  /* Lembrando que a propriedade transform não possui salvamento de valores então sempre que um novo valor for adicionado devemos também adicionar os antigos */
+  from {
+    transform: translateX(300%) rotateZ(26deg);
+  }
+  to {
+    transform: translateX(-180%) rotateZ(26deg);
+  }
 }

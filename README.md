@@ -43,3 +43,10 @@ section:not(:hover) .uperPart {
 
 
 OBS: Por algum motivo os botões do MUI não estão funcionando no Vercel, vou remove-los
+
+
+
+
+Agora que comecei a trabalhar em um mercado o tempo que tenho para programar diminuiu muito, mas isso não vai me fazer desistir de entrar na area. 
+
+De qualquer maneira espero que o projeto esteja em um bom estado e infelizmente a primeira conexão com o back-end leva um pouco de tempo para acontecer, mas peço que tenha um pouco de paciência e agradeço pela atenção em ver o meu projeto.
