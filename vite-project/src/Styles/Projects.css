@@ -80,7 +80,10 @@ section:not(:hover) .lowerPart {
   transition: transform 0.5s ease;
   align-items: center;
 }
-
+.uperPart a {
+  display: flex;
+  justify-content: center;
+}
 .visitWebBtn {
   width: 150px;
   height: 40px;

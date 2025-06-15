@@ -1,13 +1,13 @@
-import { useState, useContext, useEffect,useRef } from "react";
+import { useState, useContext, useEffect, useRef } from "react";
 import { UserContext } from "./UserContext";
 
 import ContainedButtons from "./Buttons";
 import { Grid, Typography, Box } from "@mui/material";
 export const Projects = () => {
   const { Language } = useContext(UserContext);
-  const hiddenElement = useRef(null)
+  const hiddenElement = useRef(null);
 
-     useEffect(() => {
+  useEffect(() => {
     // Configuração do IntersectionObserver
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -38,7 +38,7 @@ export const Projects = () => {
         {Language ? "My Projects" : "Meus projetos"}
       </h2>
       <div className="sessões">
-       {/* <section>
+        {/* <section>
           <img src="myblog-print-2.png" alt="My blog screenshot" />
           <div className={"uperPart"}>
             <button className="visitWebBtn">
@@ -73,39 +73,57 @@ export const Projects = () => {
           </div>
         </section> */}
         <section>
-          <img src="ForeverEcommecerScreenShot.png" alt="Ecommecer screenshot" />
+          <img
+            src="ForeverEcommecerScreenShot.png"
+            alt="Ecommecer screenshot"
+          />
           <div className={"uperPart"}>
-            <button className="visitWebBtn">
-              <a href="https://forevere-commerce2.onrender.com/" target="_blank">
-                Website
-              </a>
-            </button>
+            <a href="https://forevere-commerce2.onrender.com/" target="_blank">
+              <button className="visitWebBtn">Website</button>
+            </a>
           </div>
           <div className={"lowerPart"}>
             {Language ? (
-              <p> 
-                The site offers a complete experience of a virtual store where is possible to create a account, login in it, save items into user's cart, add cloths of differents sizes, changes the quantity of a certain cloth and delete them.
-                This was my first ecommerce being a mern website(mongoose, express, React, Node) and was a challenge that helped me to improve in my skills of problem resolving and how to use arrays to make complexe and dynamic lists.<br />
-                <span className="negrito">technologies</span>: React JS/TypeScript/JavaScript, Node/Express, HTML/CSS,mongoDB and Tailwind. 
+              <p>
+                The site offers a complete experience of a virtual store where
+                is possible to create a account, login in it, save items into
+                user's cart, add cloths of differents sizes, changes the
+                quantity of a certain cloth and delete them. This was my first
+                ecommerce being a mern website(mongoose, express, React, Node)
+                and was a challenge that helped me to improve in my skills of
+                problem resolving and how to use arrays to make complexe and
+                dynamic lists.
+                <br />
+                <span className="negrito">technologies</span>: React
+                JS/TypeScript/JavaScript, Node/Express, HTML/CSS,mongoDB and
+                Tailwind.
               </p>
             ) : (
               <p>
-                O site oferece uma experiência completa de uma loja virtual onde é possível criar uma conta, fazer login, salvar itens no carrinho do usuário, adicionar roupas de diferentes tamanhos, mudar a quantidade de uma certa roupa e deleta-las. Esse projeto foi meu primeiro ecommerce sendo um projeto mern(mongoose,
-                express, React, Node) e foi um desafio que me ajudou a melhorar minhas habilidades em resolver problemas e como usar arrays para fazer listas complexas e dinâmicas. <br />
+                O site oferece uma experiência completa de uma loja virtual onde
+                é possível criar uma conta, fazer login, salvar itens no
+                carrinho do usuário, adicionar roupas de diferentes tamanhos,
+                mudar a quantidade de uma certa roupa e deleta-las. Esse projeto
+                foi meu primeiro ecommerce sendo um projeto mern(mongoose,
+                express, React, Node) e foi um desafio que me ajudou a melhorar
+                minhas habilidades em resolver problemas e como usar arrays para
+                fazer listas complexas e dinâmicas. <br />
                 <span className="negrito">tecnologias</span>: React JS/
-                TypeScript/JavaScript, Node/Express,  HTML/CSS,mongoDB e Tailwind.
+                TypeScript/JavaScript, Node/Express, HTML/CSS,mongoDB e
+                Tailwind.
               </p>
             )}
           </div>
         </section>
         <section>
-          <img src="taskmanager-printe.png" alt="A screenshot of my taskmanager project" />
+          <img
+            src="taskmanager-printe.png"
+            alt="A screenshot of my taskmanager project"
+          />
           <div className={"uperPart"}>
-            <button className="visitWebBtn">
-              <a href="https://task-manager-q6ci.onrender.com/" target="_blank">
-                Website
-              </a>
-            </button>
+            <a href="https://task-manager-q6ci.onrender.com/" target="_blank">
+              <button className="visitWebBtn">Website</button>
+            </a>
           </div>
           <div className="lowerPart">
             {Language ? (
@@ -138,14 +156,12 @@ export const Projects = () => {
           />
 
           <div className={"uperPart"}>
-            <button className="visitWebBtn">
-              <a
-                href="https://manage-landing-page-master-challenge-2w5a3hunc.vercel.app/"
-                target="_blank"
-              >
-                Website
-              </a>
-            </button>
+            <a
+              href="https://manage-landing-page-master-challenge-2w5a3hunc.vercel.app/"
+              target="_blank"
+            >
+              <button className="visitWebBtn">Website</button>
+            </a>
           </div>
           <div className="lowerPart">
             <Typography
@@ -176,7 +192,7 @@ export const Projects = () => {
           </p>
         </div>
         <div>
-          <ContainedButtons link = {"/MoreProjects"}/>
+          <ContainedButtons link={"/MoreProjects"} />
         </div>
       </div>
     </div>

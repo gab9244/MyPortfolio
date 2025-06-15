@@ -1,14 +1,21 @@
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 .sobreMim{
 display: flex;
 text-align: center;
 flex-direction: column;
 align-items: center;
 gap: 30px;
+
+}
+.sobreMim h1{
+font-family: "Oswald", sans-serif;
+font-size: 100px;
 }
 .sobreMim p{
     width: 80vw;
     font-size: 1.3rem;
     color: #737783;
+
 }
 .SobreSocials {
     background-color: #0590DF; 

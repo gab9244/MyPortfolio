@@ -10,7 +10,7 @@ export const Sobre = () => {
     <main className="sobreMim">
       {!Language ? (
         <>
-          <h1>Mais sobre mim.</h1>
+          <h1>Introdução</h1>
           <p>
             Meu nome é Gabriel Francisco Santos de Souza, sou um desenvolvedor e
             minha jornada até aqui começa a mais ou menos dois anos, no meu
