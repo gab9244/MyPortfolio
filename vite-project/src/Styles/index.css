@@ -2,6 +2,7 @@
 *{
     padding: 0;
     margin: 0;
+    
 }
 body {
     display: flex;
@@ -19,7 +20,7 @@ body {
 
 }
 h1 {
-    font-family: 'Inconsolata', monospace;
+    font-family: "Oswald", sans-serif;
 
 }
 p {

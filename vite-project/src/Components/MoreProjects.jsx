@@ -3,9 +3,9 @@ import { Typography } from "@mui/material";
 export const MoreProjects = () => {
   return (
     <div id="Projects">
-      <Typography variant="h4" component={"h3"} sx={{ marginBottom: 12 }}>
+      <h1 >
         Mais projetos
-      </Typography>
+      </h1>
       <div className="Moreprojects">
         <section>
           <img src="myblog-print-2.png" alt="My blog screenshot" />

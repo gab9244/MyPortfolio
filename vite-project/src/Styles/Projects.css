@@ -36,6 +36,8 @@
   align-items: center;
   margin-top: 60px;
   flex-direction: column;
+    font-family: "Oswald", sans-serif;
+
 }
 .projectsHeader {
   margin: 50px;
@@ -115,6 +117,7 @@ section:not(:hover) .lowerPart {
   overflow: scroll;
   display: flex;
   justify-content: center;
+  
 }
 .lowerPart p {
   width: 80%;
@@ -157,13 +160,19 @@ section img {
 }
 .ProjectsH2 {
   font-size:2rem;
+  
 }
-
+#Projects h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 .Moreprojects {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
   justify-content: center;
+    font-family: "Oswald", sans-serif;
+
 }
 @media all and (max-width: 900px) {
   .sessões {

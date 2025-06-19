@@ -13,20 +13,21 @@
   text-align: center;
   gap: 20px;
   width: 80vw;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
   /* overflow-x: hidden; */
-
-
 }
 
 .HomeLayout h1 {
-  font-family: Roboto,sans-serif;
+  font-family: "Oswald", sans-serif;
+
   font-size: 3rem;
 }
 .HomeLayout p {
   font-size: 2rem;
   color: #737783;
-
-
+  font-family: "Oswald", sans-serif;
 }
 .MfotoDIV {
   position: relative;
@@ -37,9 +38,9 @@
   border-radius: 10%;
   border-radius: 50%;
   position: relative;
-  
 }
-.squareShape1, .squareShape2{
+.squareShape1,
+.squareShape2 {
   position: absolute;
   bottom: -5px;
   width: 500px;
@@ -50,47 +51,42 @@
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-
 }
-.squareShape1::after, .squareShape2::before{
-  content: '';
+.squareShape1::after,
+.squareShape2::before {
+  content: "";
   display: block;
-  position:absolute;
-  border-radius: 50% ;
+  position: absolute;
+  border-radius: 50%;
   width: 200px;
   height: 150px;
   transform: translate(-5%, -50%);
-  background-color:  rgb(25, 131, 231);
-
+  background-color: rgb(25, 131, 231);
 }
-.squareShape1::after, .squareShape2::after{
-  content: '';
+.squareShape1::after,
+.squareShape2::after {
+  content: "";
   display: block;
-  position:absolute;
-  border-radius:  50%;
-   width: 200px;
+  position: absolute;
+  border-radius: 50%;
+  width: 200px;
   height: 150px;
   transform: translate(150%, -50%);
-  background-color:  rgb(25, 131, 231);
-
-
+  background-color: rgb(25, 131, 231);
 }
-
 
 .squareShape2 {
-   bottom: 15px;
+  bottom: 15px;
   animation-delay: 0.25s;
   background-color: blue;
-
 }
 @keyframes Waves {
-     from {
+  from {
     transform: translateX(100%);
   }
   to {
     transform: translateX(-100%);
   }
-  
 }
 
 .Socials img {
@@ -100,8 +96,5 @@
   .HomeLayout {
     font-size: 1rem;
     width: 80vw;
-
   }
-  
 }
-
